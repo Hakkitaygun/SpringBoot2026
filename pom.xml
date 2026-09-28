@@ -3,19 +3,22 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <!-- Spring  boot version -->
+    <!--Spring boot Version (parent)-->
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>4.1.1</version>
+        <version>4.1.1</version>  <!-- Spring Boot Version: 3.3.7< 3.4.9< 3.5.5< 4.0.5 < 4.1.1 -->
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.hakkitaygun</groupId>
+
+    <!--for project information-->
+    <groupId>com.hamitmizrak</groupId>
     <artifactId>SpringBoot2026</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>SpringBoot2026</name>
-    <description>SpringBoot2026</description>
+    <description>Spring boot app</description>
     <url/>
+
     <!-- Proje Lisansı -->
     <licenses>
         <license>
@@ -91,10 +94,10 @@
         </dependency>-->
 
         <!-- #### REDIS #################################################  -->
-        <!--  <dependency>
-              <groupId>org.springframework.boot</groupId>
-              <artifactId>spring-boot-starter-data-redis</artifactId>
-          </dependency>-->
+      <!--  <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>-->
 
         <!--<dependency>
             <groupId>org.springframework.boot</groupId>
@@ -106,28 +109,28 @@
             <artifactId>jackson-databind</artifactId>
         </dependency>
 
-        <!-- <dependency>
-             <groupId>org.springframework.boot</groupId>
-             <artifactId>spring-boot-starter-data-redis</artifactId>
-             <exclusions>
-                 <exclusion>
-                     <groupId>io.lettuce.core</groupId>
-                     <artifactId>lettuce-core</artifactId>
-                 </exclusion>
-             </exclusions>
-         </dependency>
+       <!-- <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>io.lettuce.core</groupId>
+                    <artifactId>lettuce-core</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
 
-         <dependency>
-             <groupId>redis.clients</groupId>
-             <artifactId>jedis</artifactId>
-         </dependency>-->
+        <dependency>
+            <groupId>redis.clients</groupId>
+            <artifactId>jedis</artifactId>
+        </dependency>-->
 
         <!-- #### ÖNEMLİ KÜTÜPHANLER #################################################  -->
         <!-- E MAİL-->
-        <!-- <dependency>
-             <groupId>org.springframework.boot</groupId>
-             <artifactId>spring-boot-starter-mail</artifactId>
-         </dependency>-->
+       <!-- <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-mail</artifactId>
+        </dependency>-->
 
         <!--lombok-->
         <dependency>
